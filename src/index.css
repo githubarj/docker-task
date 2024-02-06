@@ -24,17 +24,26 @@
 
 /* Reusable css classes */
 
+.normal-text, .medium-text, .header-text, .large-text {
+  color: var(--text-color);
+}
+
 .normal-text {
-  font-size: 1rem;
+  font-size: 0.75rem;
   font-weight: 400;
+} 
+
+.medium-text {
+  font-size: 1rem;
+  font-weight: 600;
 }
 
 .header-text {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .large-text {
-  font-size: 3rem;
+  font-size: 1.5rem;
   font-weight: 600;
 }

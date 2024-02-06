@@ -1,6 +1,34 @@
 .landing-page-container {
     background-color: var(--secondary-color);
     flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
 }
 
-/* Landing page haeder styling */
+/* Landing page header styling */
+
+.header-container {
+    background-color: var(--accent-color);
+    padding: 10px 60px 15px 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    border-radius: 0px 0px 10px 10px;
+}
+
+/* Price section styling */
+
+.price-section-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+
+
+
+
