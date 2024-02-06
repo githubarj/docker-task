@@ -1,2 +1,5 @@
-
-
+.app-container {
+  padding: 40px;
+  display: flex;
+  height: 100%;
+}

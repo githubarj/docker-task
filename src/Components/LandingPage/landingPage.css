@@ -1,0 +1,6 @@
+.landing-page-container {
+    background-color: var(--secondary-color);
+    flex-grow: 1;
+}
+
+/* Landing page haeder styling */

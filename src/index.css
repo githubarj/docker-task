@@ -1,11 +1,10 @@
-
-
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: Inter;
+  font-style: normal;
 }
-
 
 #root {
   height: 100vh;
@@ -13,12 +12,29 @@
   background: var(--primary-color);
 }
 
-
+/* Global css variables */
 
 :root {
-  --primary-color: #E6EDF3;
-  --secondary-color:#181B1C ;
-  --accent-color: #BD1E4B;
-  --card-color:#22272D ;
-  --text-color: ;
+  --primary-color: #e6edf3;
+  --secondary-color: #181b1c;
+  --accent-color: #bd1e4b;
+  --card-color: #22272d;
+  --text-color: #fff;
+}
+
+/* Reusable css classes */
+
+.normal-text {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.header-text {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.large-text {
+  font-size: 3rem;
+  font-weight: 600;
 }

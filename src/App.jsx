@@ -5,7 +5,7 @@ import {
   Route,
   createRoutesFromElements,
 } from "react-router-dom";
-import LandingPage from "./Components/LandingPage";
+import LandingPage from "./Components/LandingPage/LandingPage";
 
 const routes = createBrowserRouter(
   createRoutesFromElements(<Route element={<LandingPage />} path="/"></Route>)
