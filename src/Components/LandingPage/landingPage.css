@@ -28,6 +28,12 @@
   align-items: center;
 }
 
+.billing-switch {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
 /* Cards styling  */
 
 .cards {
