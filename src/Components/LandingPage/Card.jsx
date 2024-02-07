@@ -25,7 +25,7 @@ function Card(props) {
       <ul className="normal-text accent-bullets ">{features}</ul>
       <button
         className="medium-text"
-        onClick={() => props.handleClick(`${props.product} `)}
+        onClick={() => props.handleClick(props.product,  props.MAUs)}
       >
         Choose Plan
       </button>
@@ -43,4 +43,5 @@ Card.propTypes = {
   checked: propTypes.bool,
   features: propTypes.array,
   handleClick: propTypes.func,
+  MAUs: propTypes.string,
 };
