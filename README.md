@@ -27,4 +27,4 @@
 
 ### 4 . Screenshot
 
-![pricing card]("src/assets/fecsd.png")
+![pricing card](/src/assets/fecsd.png)
