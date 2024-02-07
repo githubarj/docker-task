@@ -6,6 +6,12 @@
   font-style: normal;
 }
 
+body::-webkit-scrollbar {
+    display: none;
+}
+
+
+
 #root {
   min-height: 100vh;
   background: var(--primary-color);
