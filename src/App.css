@@ -3,3 +3,9 @@
   display: flex;
   min-height: 100vh;
 }
+
+@media screen and (max-width: 320px) {
+  .app-container {
+    padding: 10px;
+  }
+}
