@@ -16,7 +16,7 @@ export const prices = [
     product: "Pro",
     monthly: "$99",
     annually: "$1188",
-    MAUs: ["2500 MAUs", "5000 MAUs", "7500 MAUs", "10000 MAUs"],
+
     features: [
       "All starter features, plus:",
       "Unlimited projects",
@@ -36,3 +36,5 @@ export const prices = [
     ],
   },
 ];
+
+export const MAUs = ["2500 MAUs", "5000 MAUs", "7500 MAUs", "10000 MAUs"];

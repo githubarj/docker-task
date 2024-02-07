@@ -1,7 +1,13 @@
 
 import { useState } from "react";
+import { MAUs } from "../../Data/Prices";
 
 function Dropdown() {
+
+    const options = MAUs.map((item, index) => {
+        return <option value={item} key={index} >{item}</option>
+    })
+
   const [selectedOption, setSelectedOption] = useState("");
 
   const handleSelectChange = (event) => {
@@ -9,15 +15,12 @@ function Dropdown() {
   };
 
   return (
-    <div>
+    <div  >
       <select value={selectedOption} onChange={handleSelectChange}>
-        <option value="">Select an option</option>
-        <option value="option1">Option 1</option>
-        <option value="option2">Option 2</option>
-        <option value="option3">Option 3</option>
+        {options}
       </select>
 
-      <p>Selected Option: {selectedOption}</p>
+      <p className="normal-text" >Monthly actve users</p>
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import propTypes from "prop-types";
+import Dropdown from "../DropDown/DropDown";
 function Card(props) {
   const features = props.features.map((item, index) => {
     return <li key={index}>{item}</li>;
@@ -19,6 +20,7 @@ function Card(props) {
             </h1>
           </div>
         )}
+        {props.product == "Pro" && <Dropdown />}
       </div>
       <ul className="normal-text accent-bullets ">{features}</ul>
       <button className="medium-text">Choose Plan</button>
