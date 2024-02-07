@@ -5,10 +5,10 @@ function PriceSection() {
     <div className="price-section-container">
       <h2 className="title-text">Choose a plan</h2>
 
-      <p className="normal-text billing-switch">
+      <div className="normal-text billing-switch">
         Billed monthly
         <ToggleSlider /> Billed annually
-      </p>
+      </div>
 
       <div className="cards">
         <Card />
