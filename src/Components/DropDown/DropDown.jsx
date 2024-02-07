@@ -16,7 +16,7 @@ function Dropdown() {
   };
 
   return (
-    <div  className="dropdown-container" >
+    <div  className="dropdown-container" > 
       <select value={selectedOption} onChange={handleSelectChange} className="dropdown-box normal-text " >
         {options}
       </select>

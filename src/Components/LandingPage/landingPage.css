@@ -40,6 +40,7 @@
 
 .cards {
   display: flex;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
   gap: 40px;
@@ -56,6 +57,7 @@
 .card-container {
   padding: 20px;
   min-width: 235px;
+  max-width: 300px;
   flex-basis: calc(33%);
   flex: 1;
   display: flex;
@@ -118,7 +120,3 @@ button:hover {
 }
 
 /* Formatting styles */
-
-.enterprise-price {
-  vertical-align: bottom;
-}
