@@ -4,6 +4,7 @@
   margin: 0;
   font-family: Inter;
   font-style: normal;
+  word-spacing: 0.2em;
 }
 
 #root {

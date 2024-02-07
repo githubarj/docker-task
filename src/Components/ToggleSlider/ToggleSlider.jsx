@@ -1,24 +1,23 @@
-import  { useState } from "react";
 import "./toggleSlider.css";
+import propTypes from "prop-types";
 
-const ToggleSlider = () => {
-  const [checked, setChecked] = useState(false);
-
-  const handleToggle = () => {
-    setChecked(!checked);
-  };
-
+function ToggleSlider(props) {
   return (
     <div className="toggle-slider">
       <input
         type="checkbox"
         id="toggle"
-        checked={checked}
-        onChange={handleToggle}
+        checked={props.checked}
+        onChange={props.handleClick}
       />
       <label htmlFor="toggle" className="slider" />
     </div>
   );
+}
+
+ToggleSlider.propTypes = {
+  checked: propTypes.bool,
+  handleClick: propTypes.func,
 };
 
 export default ToggleSlider;

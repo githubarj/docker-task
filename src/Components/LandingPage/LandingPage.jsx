@@ -5,7 +5,7 @@ import PriceSection from "./PriceSection";
 function LandingPage() {
   return (
     <div className="landing-page-container">
-      <Header />
+      <Header /> 
       <PriceSection />
     </div>
   );

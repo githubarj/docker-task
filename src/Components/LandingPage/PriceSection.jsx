@@ -1,10 +1,17 @@
 import Card from "./Card";
 import ToggleSlider from "../ToggleSlider/ToggleSlider";
 import { prices } from "../../Data/Prices";
+import { useState } from "react";
 
 function PriceSection() {
+  const [checked, setChecked] = useState(false);
+
+  const handleToggle = () => {
+    setChecked(!checked);
+  };
+
   const pricing = prices.map((item, index) => {
-    return <Card key={index} {...item} />;
+    return <Card key={index} {...item} checked= {checked} />;
   });
 
   return (
@@ -13,7 +20,8 @@ function PriceSection() {
 
       <div className="normal-text billing-switch">
         Billed monthly
-        <ToggleSlider /> Billed annually
+        <ToggleSlider checked={checked} handleClick={handleToggle} /> Billed
+        annually
       </div>
 
       <div className="cards">{pricing}</div>

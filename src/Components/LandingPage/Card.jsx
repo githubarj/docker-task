@@ -10,9 +10,14 @@ function Card(props) {
         <h2 className="header-text">{props.product}</h2>
 
         {props.price ? (
-          <h2 className="title-text">{props.price}</h2>
+          <h2 className="title-text enterprise-price">{props.price}</h2>
         ) : (
-          <h1 className="large-text">{props.monthly}</h1>
+          <div className="price-text">
+            <h1 className="large-text">
+              {props.checked ? props.annually : props.monthly}
+              {!props.checked && <span className="header-text">/month</span>}
+            </h1>
+          </div>
         )}
       </div>
       <ul className="normal-text accent-bullets ">{features}</ul>
@@ -27,5 +32,7 @@ Card.propTypes = {
   product: propTypes.string,
   price: propTypes.string,
   monthly: propTypes.string,
+  annually: propTypes.string,
+  checked: propTypes.bool,
   features: propTypes.array,
 };
