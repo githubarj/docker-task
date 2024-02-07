@@ -1,3 +1,4 @@
+import propTypes from "prop-types";
 function Card(props) {
   const features = props.features.map((item, index) => {
     return <li key={index}>{item}</li>;
@@ -21,3 +22,10 @@ function Card(props) {
 }
 
 export default Card;
+
+Card.propTypes = {
+  product: propTypes.string,
+  price: propTypes.string,
+  monthly: propTypes.string,
+  features: propTypes.array,
+};
