@@ -1,11 +1,12 @@
 
 import { useState } from "react";
 import { MAUs } from "../../Data/Prices";
+import "./dropDown.css";
 
 function Dropdown() {
 
     const options = MAUs.map((item, index) => {
-        return <option value={item} key={index} >{item}</option>
+        return <option value={item} key={index}   >{item}</option>
     })
 
   const [selectedOption, setSelectedOption] = useState("");
@@ -15,8 +16,8 @@ function Dropdown() {
   };
 
   return (
-    <div  >
-      <select value={selectedOption} onChange={handleSelectChange}>
+    <div  className="dropdown-container" >
+      <select value={selectedOption} onChange={handleSelectChange} className="dropdown-box normal-text " >
         {options}
       </select>
 
