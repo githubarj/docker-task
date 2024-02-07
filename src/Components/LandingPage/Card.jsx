@@ -23,7 +23,12 @@ function Card(props) {
         {props.product == "Pro" && <Dropdown />}
       </div>
       <ul className="normal-text accent-bullets ">{features}</ul>
-      <button className="medium-text">Choose Plan</button>
+      <button
+        className="medium-text"
+        onClick={() => props.handleClick(`${props.product} `)}
+      >
+        Choose Plan
+      </button>
     </div>
   );
 }
@@ -37,4 +42,5 @@ Card.propTypes = {
   annually: propTypes.string,
   checked: propTypes.bool,
   features: propTypes.array,
+  handleClick: propTypes.func,
 };

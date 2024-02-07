@@ -2,8 +2,9 @@ import Card from "./Card";
 import ToggleSlider from "../ToggleSlider/ToggleSlider";
 import { prices } from "../../Data/Prices";
 import { useState } from "react";
+import propTypes from "prop-types";
 
-function PriceSection() {
+function PriceSection({ onClick}) {
   const [checked, setChecked] = useState(false);
 
   const handleToggle = () => {
@@ -11,7 +12,7 @@ function PriceSection() {
   };
 
   const pricing = prices.map((item, index) => {
-    return <Card key={index} {...item} checked= {checked} />;
+    return <Card key={index} {...item} checked= {checked} handleClick= {onClick} />;
   });
 
   return (
@@ -28,5 +29,10 @@ function PriceSection() {
     </div>
   );
 }
+
+PriceSection.propTypes = {
+
+  onClick: propTypes.func,
+};
 
 export default PriceSection;
