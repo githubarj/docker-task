@@ -2,9 +2,8 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: Inter;
+  font-family: "Open Sans", sans-serif;
   font-style: normal;
-  word-spacing: 0.2em;
 }
 
 #root {
@@ -35,7 +34,7 @@
 
 .normal-text {
   font-size: 0.75rem;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 .medium-text {
