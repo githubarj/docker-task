@@ -20,12 +20,14 @@ function Card(props) {
             </h1>
           </div>
         )}
-        {props.product == "Pro" && <Dropdown />}
+        {props.product == "Pro" && (
+          <Dropdown selectedOption={props.selectedOption} handleSelectChange = {props.onChange} />
+        )}
       </div>
       <ul className="normal-text accent-bullets ">{features}</ul>
       <button
         className="medium-text"
-        onClick={() => props.handleClick(props.product,  props.MAUs)}
+        onClick={() => props.handleClick(props.product, props.MAUs)}
       >
         Choose Plan
       </button>
@@ -44,4 +46,6 @@ Card.propTypes = {
   features: propTypes.array,
   handleClick: propTypes.func,
   MAUs: propTypes.string,
+  selectedOption: propTypes.string,
+  onChange: propTypes.func,
 };
