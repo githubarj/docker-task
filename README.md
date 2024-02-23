@@ -1,30 +1,35 @@
-# [Frontend Challenge](https://frontendchallengejr.netlify.app/)
+# Docker Task
 
-## Techgnologies used
+### Task
 
-- VS code
-- React
-- Netifly
-- Git Version Control
+For a sample static web page: Write a Dockerfile, build a Docker image, push it to the Docker Hub, and provide instructions on how to run the image.  
 
-## Pricing Card Page
+## Usage
 
-### 1 . Design Study
+- Ensure you have docker properly configured on your computer by cheking its version. if it returns command not found kindly refer to the [Docker documentation](https://docs.docker.com/desktop/)  
 
-- Decided on a font to use and went with open sans which is a sans serif font due to the lack of decorative tapers.
-- picked colors with screensniping plus a color detection tool https://redketchup.io/color-picker.
-- Divided the page into components.
+```cmd
+docker --version
+```
 
-### 2 . Development
+- pull the docker image from docker hub by running this command  
 
-- Created a scaffolding for the project using Vite and set up a git repository.
-- Organized ny folder structure.
-- Implimented the design using React and css.
+```cmd
+docker pull githubarj/docker-task:1.0
+```
 
-### 3 . Hosting
+- verify you have correctly pulled it by cheking installed images through the command
 
-- Hosted on Netifly and accessible on all devices with the url : https://frontendchallengejr.netlify.app/
+```cmd
+docker images
+```
 
-### 4 . Screenshot
+- Run the image to create a container, replace cont-name with name of container you woud prefer and port number with your preferred port number
+
+```cmd
+docker run -d --name cont-name -p 3000:80 githubarj/docker-task:1.0
+```
+
+- Open your browser and go to that port with local host and you should see something similar to the screenshot below:  
 
 ![pricing card](/src/assets/fecsd.png)
