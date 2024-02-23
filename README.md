@@ -6,7 +6,7 @@ For a sample static web page: Write a Dockerfile, build a Docker image, push it 
 
 ## Usage
 
-- Ensure you have docker properly configured on your computer by cheking its version. if it returns command not found kindly refer to the [Docker documentation](https://docs.docker.com/desktop/)  
+- Ensure you have docker properly configured on your computer by cheking its version if not kindly refer to the [Docker documentation](https://docs.docker.com/desktop/)  
 
 ```cmd
 docker --version
