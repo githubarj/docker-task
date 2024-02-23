@@ -27,7 +27,7 @@ docker images
 - Run the image to create a container, replace cont-name with name of container you woud prefer and port number with your preferred port number
 
 ```cmd
-docker run -d --name cont-name -p 3000:80 githubarj/docker-task:1.0
+docker run -d --name cont-name -p 5173:80 githubarj/docker-task:1.0
 ```
 
 - Open your browser and go to that port with local host and you should see something similar to the screenshot below:  
