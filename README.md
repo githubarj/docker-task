@@ -30,6 +30,6 @@ docker images
 docker run -d --name cont-name -p 5173:80 githubarj/docker-task:1.0
 ```
 
-- Open your browser and go to that port with local host and you should see something similar to the screenshot below:  
+- Open your browser and go `localhost:5173`  and you should see something similar to the screenshot below:  
 
 ![pricing card](/src/assets/fecsd.png)
